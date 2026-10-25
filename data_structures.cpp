@@ -1,4 +1,5 @@
-#include "data_strictures"
+#include "data_structures.h"
+#include "linked_list.h"
 #include <iostream>
 template <typename T>
 void print(T arg) {
@@ -24,7 +25,23 @@ struct fraction {
 	}
 };
 
-	void data_structures() {
+void data_structures() {
+	std::cout << "Data structur " << std::endl;
+	LinkedList<int>* intList = new LinkedList<int>();
+	intList->add(10);
+	intList->add(20);
+	intList->add(30);
+	intList->print();
+	intList->insertBefore(5, 0);
+	intList->print();
+	std::cout << "remove" << std::endl;
+	intList->insertBefore(15, 2);
+	intList->print();
+
+
+}
+
+	void data_structures_t() {
 		std::cout << "Data structures and tempelates" << std::endl;
 		print("Temprlate function demo");
 		print(42);

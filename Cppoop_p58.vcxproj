@@ -144,12 +144,14 @@
     <ClCompile Include="data_structures.cpp" />
     <ClCompile Include="fraction.cpp" />
     <ClCompile Include="intro.cpp" />
+    <ClCompile Include="linked_list.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basics.h" />
     <ClInclude Include="data_structures.h" />
     <ClInclude Include="fraction.h" />
     <ClInclude Include="intro.h" />
+    <ClInclude Include="linked_list.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

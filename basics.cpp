@@ -8,23 +8,7 @@ void basics() {
 	// тип (базового класу), при цьому фактично є об'єктами
 	// похідних (дочірніх) типів
 
-	Product* stock[2];
-
-	stock[0] = (new Laptop())
-		->setHardware("Intel Core 5, RAM 16GB, SSD 512GB")
-		->setPower(90)
-		->setName("Acer Nitro")
-		->setPrice(60499);
-
-	stock[1] = (new Monitor())
-		->setDiagonal(32)
-		->setPower(120)
-		->setName("Dell Vision")
-		->setPrice(7950);
-
-	for (auto product : stock) {
-		std::cout << product->toString() << std::endl;
-	}
+	
 }
 
 /*
