@@ -51,6 +51,9 @@
     <ClCompile Include="linked_list.cpp">
       <Filter>data_structures</Filter>
     </ClCompile>
+    <ClCompile Include="vector2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fraction.h">
@@ -82,6 +85,9 @@
     </ClInclude>
     <ClInclude Include="linked_list.h">
       <Filter>data_structures</Filter>
+    </ClInclude>
+    <ClInclude Include="vector2.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

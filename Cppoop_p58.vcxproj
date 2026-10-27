@@ -149,6 +149,7 @@
     <ClCompile Include="linked_list.cpp" />
     <ClCompile Include="Monitor.cpp" />
     <ClCompile Include="Product.cpp" />
+    <ClCompile Include="vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basics.h" />
@@ -161,6 +162,7 @@
     <ClInclude Include="Monitor.h" />
     <ClInclude Include="Periphery.h" />
     <ClInclude Include="Product.h" />
+    <ClInclude Include="vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
