@@ -142,16 +142,25 @@
     <ClCompile Include="basics.cpp" />
     <ClCompile Include="Cppoop_p58.cpp" />
     <ClCompile Include="data_structures.cpp" />
+    <ClCompile Include="Electrical.cpp" />
     <ClCompile Include="fraction.cpp" />
     <ClCompile Include="intro.cpp" />
+    <ClCompile Include="Laptop.cpp" />
     <ClCompile Include="linked_list.cpp" />
+    <ClCompile Include="Monitor.cpp" />
+    <ClCompile Include="Product.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basics.h" />
     <ClInclude Include="data_structures.h" />
+    <ClInclude Include="Electrical.h" />
     <ClInclude Include="fraction.h" />
     <ClInclude Include="intro.h" />
+    <ClInclude Include="Laptop.h" />
     <ClInclude Include="linked_list.h" />
+    <ClInclude Include="Monitor.h" />
+    <ClInclude Include="Periphery.h" />
+    <ClInclude Include="Product.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
