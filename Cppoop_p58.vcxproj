@@ -162,6 +162,7 @@
     <ClInclude Include="Monitor.h" />
     <ClInclude Include="Periphery.h" />
     <ClInclude Include="Product.h" />
+    <ClInclude Include="queue.h" />
     <ClInclude Include="vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

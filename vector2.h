@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 #include <string>
 #include <iostream>
 #include <stdexcept>
@@ -148,4 +148,4 @@ public:
         out << "(" << v.x << ", " << v.y << ")";
         return out;
     }
-};
+};*/
