@@ -1,41 +1,43 @@
 #pragma once
 #include "linked_list.h"
+#include <stdexcept>
+
+// реалізація структури даних "черга"
 template<typename T>
 class Queue {
 private:
-	LinkedList<T>* queue;
+	LinkedList<T>* queue = NULL;
 public:
-	void enqueuea(T data){
+	void enqueue(T data) {  // поставити в чергу
 		queue->add(data);
 	}
-	T    dequeue() {
-		if (queue->getSize() > 0) {
+
+	T dequeue() {   // вилучити з черги (черговий елемент)
+		if (getLength() > 0) {
 			return queue->remove(0);
 		}
 		else {
-			return T(0);
+			throw std::length_error("Queue<T>::dequeue(): Dequeue requested for empty queue");
 		}
 	}
-	size_t getLenght() {
+
+	size_t getLength() {
 		return queue->getSize();
 	}
 
 	Queue() {
 		queue = new LinkedList<T>();
 	}
-
 	Queue(Queue<T>& other) {
-	///////
+		// this->queue = other->queue; - неправильно, це друге посилання на один ресурс
+		// "глибоке" копіювання - створення повної копії ресурсу (переліку)
+		// TODO: реалізувати
 	}
-
 	Queue(Queue<T>&& other) {
-		this->queue = other->queue;
-		other->queue = NULL;
+		this->queue = other.queue;
+		other.queue = NULL;
 	}
-
 	~Queue() {
-		if(queue) delete queue;
+		if (queue) delete queue;
 	}
-
-
 };
