@@ -4,6 +4,25 @@
 #include <iostream>
 #include "queue.h"
 
+
+void data_structures() {
+    //винядковы ситуаціі
+    LinkedList<int>* intList = new LinkedList<int>();
+    intList->add(10);
+    intList->add(20);
+    intList->add(30);
+    intList->print();
+    try {
+        intList->insertBefore(5, 0);
+        intList->print();
+        intList->insertBefore(15, 5);
+        intList->print();
+    }
+    catch (const std::range_error& ex) {
+        std::cerr << "Exception: " << ex.what() << std::endl;
+    }
+}
+
 template<typename T>   // Шаблонними можуть бути функції та типи (класи, структури)
 void print(T arg) {    // Шаблон вводить "змінну" для типу, традиційно "Т"
     std::cout << arg   // В самій функції (чи типі) ця "Т" вживається там,
@@ -27,7 +46,7 @@ struct fraction {      // Для типів (наприклад, структу�
         numerator = n;
     }
 };
-void data_structures() {
+void data_structures_3() {
     std::cout << "Qeueu demo" << std::endl;
     Queue<int> queue;
     queue.enqueuea(1);

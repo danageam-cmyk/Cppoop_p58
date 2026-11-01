@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
-
+#include <format>
+#include <stdexcept>
 template<typename T>
 struct ListNode {
 	T data;
@@ -61,6 +62,8 @@ void LinkedList<T>::insertBefore(T data, size_t index) {
 		}
 		else {
 			// помилка - index out of range
+			throw std::range_error(std::format("Max indez {} dut got {}",size - 1,index)
+			);
 		}
 	}
 }
